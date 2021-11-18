@@ -6,7 +6,8 @@ plugin:
   version: 0.1.0
   upstream_project_url: https://puppet.com/docs/puppet/7/lang_template_epp.html
 
-puppet: true
+puppet: 
+  enabled: true
 
 common:
   can_validate: true
