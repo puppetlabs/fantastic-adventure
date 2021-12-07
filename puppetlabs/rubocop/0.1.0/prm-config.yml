@@ -7,7 +7,7 @@ plugin:
   upstream_project_url: https://github.com/rubocop/rubocop
 
 gem:
-  name: [rubocop]
+  name: [rubocop, rubocop-performance, rubocop-rspec]
   executable: rubocop
 
 common:
