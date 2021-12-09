@@ -1,0 +1,19 @@
+---
+plugin:
+  author: puppetlabs
+  id: puppet-strings
+  display: Puppet Strings
+  version: 0.1.0
+  upstream_project_url: https://github.com/puppetlabs/puppet-strings
+
+gem:
+  name: [puppet-strings]
+  executable: puppet
+
+common:
+  default_args: [ "strings" ]
+  can_validate: true
+  needs_write_access: false
+  help_arg: '--help'
+  success_exit_code: 0
+  interleave_stdout_err: false
