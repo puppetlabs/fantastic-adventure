@@ -1,0 +1,20 @@
+---
+plugin:
+  author: puppetlabs
+  id: onceover
+  display: Onceover
+  version: 0.1.0
+  upstream_project_url: https://github.com/dylanratcliffe/onceover
+
+gem:
+  name: [onceover]
+  executable: onceover
+
+common:
+  default_args: [ "run", "spec" ]
+  requires_git: true
+  can_validate: true
+  needs_write_access: false
+  help_arg: '--help'
+  success_exit_code: 0
+  interleave_stdout_err: false
