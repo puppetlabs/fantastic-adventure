@@ -11,6 +11,7 @@ gem:
   executable: puppet-lint
 
 common:
+  default_args: ["./"]
   can_validate: true
   needs_write_access: false
   help_arg: '--help'
