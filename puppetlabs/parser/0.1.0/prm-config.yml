@@ -1,0 +1,18 @@
+---
+plugin:
+  author: puppetlabs
+  id: parser
+  display: Puppet Parser
+  version: 0.1.0
+  upstream_project_url: https://puppet.com/docs/puppet/7/lang_template_epp.html
+
+puppet: 
+  enabled: true
+
+common:
+  use_script: "entrypoint"
+  can_validate: true
+  needs_write_access: false
+  help_arg: '--help'
+  success_exit_code: 0
+  interleave_stdout_err: false
