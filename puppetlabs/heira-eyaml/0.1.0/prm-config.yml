@@ -1,0 +1,19 @@
+---
+plugin:
+  author: puppetlabs
+  id: heira-eyaml
+  display: Hiera Eyaml
+  version: 0.1.0
+  upstream_project_url: https://github.com/voxpupuli/hiera-eyaml
+
+gem:
+  name: [hiera-eyaml]
+  executable: eyaml
+
+common:
+  default_args: ["--help"]
+  can_validate: false
+  needs_write_access: true
+  help_arg: '--help'
+  success_exit_code: 0
+  interleave_stdout_err: false
