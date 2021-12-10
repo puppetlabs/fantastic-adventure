@@ -1,0 +1,18 @@
+---
+plugin:
+  author: puppetlabs
+  id: r10k
+  display: Puppet R10k
+  version: 0.1.0
+  upstream_project_url: https://github.com/puppetlabs/r10k
+
+gem:
+  name: [r10k]
+  executable: r10k
+
+common:
+  can_validate: true
+  needs_write_access: false
+  help_arg: '--help'
+  success_exit_code: 0
+  interleave_stdout_err: false
