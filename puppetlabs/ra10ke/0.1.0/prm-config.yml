@@ -1,0 +1,20 @@
+---
+plugin:
+  author: puppetlabs
+  id: ra10ke
+  display: ra10ke
+  version: 0.1.0
+  upstream_project_url: https://github.com/voxpupuli/ra10ke
+
+gem:
+  name: ["ra10ke", "rubygems-update"]
+
+common:
+  requires_git: true
+  default_args: ["-T"]
+  use_script: "entrypoint"
+  can_validate: true
+  needs_write_access: true
+  help_arg: '--help'
+  success_exit_code: 0
+  interleave_stdout_err: false
