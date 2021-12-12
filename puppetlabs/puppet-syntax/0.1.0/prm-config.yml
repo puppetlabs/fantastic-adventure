@@ -1,0 +1,19 @@
+---
+plugin:
+  author: puppetlabs
+  id: puppet-syntax
+  display: Puppet Syntax
+  version: 0.1.0
+  upstream_project_url: https://github.com/voxpupuli/puppet-syntax
+
+gem:
+  name: [puppet-syntax, "rubygems-update"]
+
+common:
+  use_script: "entrypoint"
+  default_args: ["syntax"]
+  can_validate: true
+  needs_write_access: false
+  help_arg: '--help'
+  success_exit_code: 0
+  interleave_stdout_err: false
