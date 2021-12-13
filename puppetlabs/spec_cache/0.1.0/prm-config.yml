@@ -6,8 +6,8 @@ plugin:
   version: 0.1.0
   upstream_project_url: https://github.com/puppetlabs/puppetlabs_spec_helper
 
-puppet: 
-  enabled: true
+Gem:
+  name: ["bundler"]
 
 common:
   use_script: "cache"
