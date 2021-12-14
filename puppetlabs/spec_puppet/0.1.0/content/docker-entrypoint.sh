@@ -1,8 +1,10 @@
 #!/bin/bash
 
 echo -e "\xF0\x9F\x9A\x80 Installing local gems..."
+rm -rf /code/vendor/cache
 # install gems locally from the cache
 bundle config  --global set cache_path /cache
+ln -sf /cache /code/vendor
 bundle install --local
 echo -e "\xE2\x9C\x85 Done"
 
@@ -15,3 +17,4 @@ echo -e "\xE2\x9C\x85 Done"
 
 echo -e "\xF0\x9F\x8E\xAF Running command: $CMD_ENTRY $*"
 exec $CMD_ENTRY $*
+
